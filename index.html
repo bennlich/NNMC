@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Genesis</title>
+    <script src="lib/agentscript.js"></script>
+    <script src="lib/data.js"></script>
+    <script src="lib/genesis.js"></script>
+    <script>
+    function startModel () {
+      // new ABM.models.Genesis("layers", 1, 0,639, 0,479, false)
+      new ABM.models.Genesis("layers", 2, 0,319, 0,239, false)
+        .start()  // Run model immediately after startup initialization      
+        .debug()  // Debug: Put Model vars in global name space, other debugging
+    };
+    </script>
+  </head>
+  <body onload="startModel()">
+    <div id="layers" style="padding:20"></div>
+  </body>
+</html>
